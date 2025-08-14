@@ -1,0 +1,121 @@
+
+Navigation Menu
+Task-1-Web-Development-intern-at-Codsoft
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Commit d87083a
+aditya99051
+authored
+3 weeks ago
+Verified
+Create index.html
+main
+1 parent 
+567ca19
+ commit 
+d87083a
+1 file changed
++176
+-0
+lines changed
+Search within code
+ 
+‎index.html
++176
+Lines changed: 176 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        <div id="header-content">
+            <div id="header-text">
+                <h1 id="heading-name">Hi, I'm <span>Rohan kumar</span></h1>
+                <p id="paragraph">Frontend Developer</p>
+                <button><a href="#">Hire Me!</a></button>
+                <button><a href="#">Download Resume</a></button>
+            </div>
+            <img id="header-image" src="Profile photo.jpg" alt="profile photo">
+        </div>
+    </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Profile photo.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>B.Tech CSE@ Galgotias University (2023-2027)
+                      I'm Rohan Kumar, a web developer passionate about building responsive and user-friendly websites. Handling from Patna, Bihar, I bring both technical skills and creative energy to  everthing I work on.
+                      
+                      I work woth the MERN stack (MongoDB, Express.js, React, node.js) and core web tools  like HTML, CSS and JavaScript. Certified by  Guvi and multiple platforms, I've gained hands-on experience through real projects.
+                      
+                      Beyond coding, I enjoy playing, and diving into new techonologies. My goal? Build meaningful digital solution that make life simmpler and better.</p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Education</p>
+                    <p class="tab-links" onclick="opentab('education')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                   </div>
+                   <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Programming Language</span><br>Python, C, & Java</li>
+                            <li><span>Fronted Development</span><br>HTML5, CSS, & Javascript</li>
+                        </ul>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>B.Tech CSE (Galgotias University)</span><br>Session:- 2023-27</li>
+                        <li><span>12th (MSRDS.College)</span><br>Grade:- 75%<br>Session:- 2021-23</li>
+                        <li><span>10th (Gurukul Vidyapeeth High School)</span><br>Grade:- 72%<br>Session:-2019-20</li>
+                    </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                <ul>
+                    <li>No Any Experience</li>
+                </ul>
+           </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+</body>
+                      </html>
